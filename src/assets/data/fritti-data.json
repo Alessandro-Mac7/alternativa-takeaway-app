@@ -1,0 +1,52 @@
+{
+  "fried": [
+    {
+      "name": "Coca cola",
+      "price_small": "2",
+      "price_large": "3",
+      "type": "soft"
+    },
+    {
+      "name": "Acqua",
+      "price_small": "2",
+      "price_large": "3",
+      "type": "soft"
+    },
+    {
+      "name": "Fanta",
+      "price_small": "2",
+      "price_large": "3",
+      "type": "soft"
+    },
+    {
+      "name": "Brasilena",
+      "price_small": "2",
+      "price_large": "3",
+      "type": "soft"
+    },
+    {
+      "name": "OBL",
+      "price_small": "2",
+      "price_large": "",
+      "type": "beer"
+    },
+    {
+      "name": "Peroni",
+      "price_small": "2",
+      "price_large": "3",
+      "type": "beer"
+    },
+    {
+      "name": "Nastro Azzurro",
+      "price_small": "2",
+      "price_large": "3",
+      "type": "beer"
+    },
+    {
+      "name": "Heineken",
+      "price_small": "2",
+      "price_large": "3",
+      "type": "beer"
+    }
+  ]
+}
