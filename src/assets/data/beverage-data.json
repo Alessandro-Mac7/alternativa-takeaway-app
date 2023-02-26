@@ -1,8 +1,14 @@
 {
   "drinks": [
     {
-      "name": "Coca cola",
-      "price_small": "2",
+      "name": "Coca Cola",
+      "price_small": "1.5",
+      "price_large": "3",
+      "type": "soft"
+    },
+    {
+      "name": "Coca Cola Zero",
+      "price_small": "1.5",
       "price_large": "3",
       "type": "soft"
     },
@@ -25,14 +31,14 @@
       "type": "soft"
     },
     {
-      "name": "OBL",
-      "price_small": "2",
-      "price_large": "3",
+      "name": "Birra artigianli a rotazione",
+      "price_small": "5",
+      "price_large": "0",
       "type": "beer"
     },
     {
-      "name": "Peroni",
-      "price_small": "2",
+      "name": "Peroni Gran Riserva Rossa",
+      "price_small": "3.5",
       "price_large": "3",
       "type": "beer"
     },
@@ -43,7 +49,13 @@
       "type": "beer"
     },
     {
-      "name": "Heineken",
+      "name": "Ceres",
+      "price_small": "3.5",
+      "price_large": "3",
+      "type": "beer"
+    },
+    {
+      "name": "Becks",
       "price_small": "2",
       "price_large": "3",
       "type": "beer"
