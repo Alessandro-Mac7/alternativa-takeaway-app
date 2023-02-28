@@ -1,11 +1,12 @@
 <template>
   <section class="container">
     <p class="fw-bold my-5">
-      <img src="../assets/icon/small-b.png" class="icon" alt=""> = piccola &nbsp;
-      <img src="../assets/icon/large-b.png" class="icon" alt=""> = family
+      <img src="../assets/icon/small-b.png" class="icon-b" alt=""> = piccola &nbsp;
+      <img src="../assets/icon/large-b.png" class="icon-b" alt=""> = family &nbsp;
+      <img src="../assets/icon/beer.png" class="icon-b" alt=""> = birra
     </p>
-    <menu-layout title="Le Birre" :data="beverageBeer" />
-    <menu-layout title="Soft Drinks" :data="beverageSoft" />
+    <menu-layout title="Soft Drinks" :data="beverageSoft" :beverage="true"/>
+    <menu-layout title="Le Birre" :data="beverageBeer" :beverage="true"/>
 
   </section>
 </template>
@@ -36,7 +37,7 @@ export default {
 </script>
 
 <style>
-.icon {
-  width: 1.3rem;
+.icon-b {
+  width: 1.6rem;
 }
 </style>

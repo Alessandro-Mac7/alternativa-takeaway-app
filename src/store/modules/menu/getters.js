@@ -17,8 +17,20 @@ export default {
     limitedPizzaMenu(state) {
         return state.pizzaMenu.pizze.filter( pizza => pizza.type === 'limited' );
     },
+    hasLimitedPizzaMenu(state) {
+        return state.pizzaMenu.pizze.filter( pizza => pizza.type === 'limited' ).length > 0;
+    },
+    arancini(state) {
+        return state.frittiMenu.frieds.filter( pizza => pizza.type === 'arancino' );
+    },
+    crocchette(state) {
+        return state.frittiMenu.frieds.filter( pizza => pizza.type === 'crocchetta' );
+    },
+    fried(state) {
+        return state.frittiMenu.frieds.filter( pizza => pizza.type === 'fried' );
+    },
     fritti(state) {
-        return state.frittiMenu;
+        return state.frittiMenu.frieds;
     },
     beverageSoft(state) {
         return state.beverageMenu.drinks.filter( drink => drink.type === 'soft' );

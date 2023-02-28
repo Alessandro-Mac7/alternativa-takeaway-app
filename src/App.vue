@@ -55,14 +55,14 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #c4bfb4;
+  color: #ece2e2;
   background-color: #393939;
   min-height: 100vh;
 }
 
 .scale-enter-active,
 .scale-leave-active {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 
@@ -72,17 +72,4 @@ export default {
   transform: scale(0.9);
 }
 
-/* Enter and leave animations can use different */
-/* durations and timing functions.              */
-.slide-fade-enter-active {
-  transition: all .3s ease;
-}
-.slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-to
-  /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
-  opacity: 0;
-}
 </style>

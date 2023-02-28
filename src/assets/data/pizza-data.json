@@ -11,8 +11,8 @@
     {
       "key": 1,
       "name": "Margherita",
-      "ingredients": "Pomodoro, mozzarella, basilico e olio EVO",
-      "price_small": "6",
+      "ingredients": "pomodoro, mozzarella, basilico e olio EVO",
+      "price_small": "5",
       "price_large": "12",
       "type": "red",
       "image": ""
@@ -20,7 +20,7 @@
     {
       "key": 2,
       "name": "Capricciosa",
-      "ingredients": "Pomodoro, mozzarella, funghi, carciofi, prosciutto cotto e olive verdi",
+      "ingredients": "pomodoro, mozzarella, funghi, carciofi, prosciutto cotto e olive verdi",
       "price_small": "7",
       "price_large": "15",
       "type": "red",
@@ -29,7 +29,7 @@
     {
       "key": 3,
       "name": "Tonno e cipolla",
-      "ingredients": "Pomodoro, mozzarella, tonno e cipolla rossa",
+      "ingredients": "pomodoro, mozzarella, tonno e cipolla rossa di Tropea",
       "price_small": "7",
       "price_large": "15",
       "type": "red",
@@ -37,8 +37,17 @@
     },
     {
       "key": 4,
-      "name": "Napoletana",
-      "ingredients": "Pomodoro, acciughe, olive nostrane, olio EVO e origano calabrese",
+      "name": "Sardi Salati",
+      "ingredients": "pomodoro, acciughe, olive, olio EVO e origano calabrese",
+      "price_small": "7",
+      "price_large": "15",
+      "type": "red",
+      "image": ""
+    },
+    {
+      "key": 23,
+      "name": "Diavola",
+      "ingredients": "pomodoro, mozzarella, salame e 'nduja",
       "price_small": "7",
       "price_large": "15",
       "type": "red",
@@ -47,8 +56,8 @@
     {
       "key": 5,
       "name": "Parmigiana",
-      "ingredients": "Pomodoro, mozzarella e melanzane fritte",
-      "price_small": "8",
+      "ingredients": "pomodoro, mozzarella e melanzane fritte",
+      "price_small": "7",
       "price_large": "16",
       "type": "red",
       "image": ""
@@ -65,16 +74,16 @@
     {
       "key": 7,
       "name": "Ortolana",
-      "ingredients": "Pomodoro, mozzarella, melanzane e zucchine fritte e peperoni arrostiti",
-      "price_small": "8",
+      "ingredients": "mozzarella, melanzane e zucchine fritte e peperoni arrostiti",
+      "price_small": "7",
       "price_large": "16",
-      "type": "red",
+      "type": "white",
       "image": ""
     },
     {
       "key": 8,
       "name": "Don Peppe",
-      "ingredients": "Pomodoro, mozzarella, pancetta, porcini, rucola, bufala a fette e scaglie di grana",
+      "ingredients": "pomodoro, mozzarella, pancetta, porcini, rucola, bufala a fette e scaglie di grana",
       "price_small": "8",
       "price_large": "16",
       "type": "red",
@@ -83,8 +92,8 @@
     {
       "key": 9,
       "name": "Contadina",
-      "ingredients": "Pomodoro, mozzarella, pancetta, nduja e cipolla",
-      "price_small": "8",
+      "ingredients": "pomodoro, mozzarella, pancetta, 'nduja e cipolla",
+      "price_small": "7",
       "price_large": "16",
       "type": "red",
       "image": ""
@@ -92,7 +101,7 @@
     {
       "key": 10,
       "name": "Paisana",
-      "ingredients": "Pomodoro, mozzarella, salsiccia, porcini, rucola e patate a forno",
+      "ingredients": "pomodoro, mozzarella, salsiccia, porcini, rucola e patate a forno",
       "price_small": "8",
       "price_large": "16",
       "type": "red",
@@ -110,7 +119,7 @@
     {
       "key": 12,
       "name": "Silana",
-      "ingredients": "Patate a fette, speck, mozzarella e rosmarino",
+      "ingredients": "Patate a fette, salsiccia, mozzarella, cacio cavallo affumicato Silano e rosmarino",
       "price_small": "8",
       "price_large": "16",
       "type": "white",
@@ -119,7 +128,7 @@
     {
       "key": 13,
       "name": "D’autunno",
-      "ingredients": "Mozzarella, speck, Philadelphia, noci e scaglie di grana",
+      "ingredients": "mozzarella, speck, gorgonzola, noci e scaglie di grana",
       "price_small": "7",
       "price_large": "15",
       "type": "white",
@@ -128,7 +137,7 @@
     {
       "key": 14,
       "name": "4 formaggi",
-      "ingredients": "Mozzarella, emmental, gorgonzola e parmigiano",
+      "ingredients": "mozzarella, emmental, gorgonzola e parmigiano",
       "price_small": "7",
       "price_large": "15",
       "type": "white",
@@ -137,7 +146,7 @@
     {
       "key": 15,
       "name": "Caprese",
-      "ingredients": "Mozzarella, pachino, bufala, origano e basilico",
+      "ingredients": "mozzarella, pachino, bufala, origano e basilico",
       "price_small": "7",
       "price_large": "15",
       "type": "white",
@@ -146,7 +155,7 @@
     {
       "key": 16,
       "name": "Rucola",
-      "ingredients": "Mozzarella, pomodorini, rucola, crudo e scaglie di grana",
+      "ingredients": "mozzarella, pomodorini, rucola, crudo e scaglie di grana",
       "price_small": "8",
       "price_large": "16",
       "type": "white",
@@ -155,16 +164,16 @@
     {
       "key": 17,
       "name": "Brontolo",
-      "ingredients": "Mozzarella, mortadella, pesto di pistacchio e stracciatella",
+      "ingredients": "mozzarella, mortadella, pesto di pistacchio e stracciatella",
       "price_small": "8",
       "price_large": "16",
-      "type": "white",
+      "type": "special",
       "image": ""
     },
     {
       "key": 18,
       "name": "Nobile",
-      "ingredients": "Mozzarella, melanzane fritte, pachino e patate",
+      "ingredients": "mozzarella, melanzane fritte, pachino e patate",
       "price_small": "8",
       "price_large": "16",
       "type": "white",
@@ -180,9 +189,18 @@
       "image": ""
     },
     {
+      "key": 24,
+      "name": "Orto piccante",
+      "ingredients": "mozzarella, zucchine fritte, patate a fette e 'nduja",
+      "price_small": "8",
+      "price_large": "16",
+      "type": "white",
+      "image": ""
+    },
+    {
       "key": 20,
       "name": "Kebabina",
-      "ingredients": "Mozzarella, patatine, iceberg, salsa rosa, kebab di tacchino e cipolla di Tropea",
+      "ingredients": "mozzarella, patatine, iceberg, salsa rosa, kebab di tacchino e cipolla di Tropea",
       "price_small": "9",
       "price_large": "19",
       "type": "special",
@@ -191,19 +209,28 @@
     {
       "key": 21,
       "name": "Cheese burger",
-      "ingredients": "Mozzarella, patatine, iceberg, 3 hamburger con panino e cheddar circondato da bacon con maionese e ketchup",
+      "ingredients": "mozzarella, patatine, iceberg, 3 hamburger con panino e cheddar circondato da bacon con maionese e ketchup",
       "price_small": "9",
       "price_large": "19",
       "type": "special",
       "image": ""
     },
     {
+      "key": 25,
+      "name": "PorkETT",
+      "ingredients": "mozzarella, porchetta e peperoni arrostiti",
+      "price_small": "8",
+      "price_large": "16",
+      "type": "special",
+      "image": ""
+    },
+    {
       "key": 22,
       "name": "Tropeana",
-      "ingredients": "Pomodoro, mozzarella, basilico e olio EVO",
+      "ingredients": "mozzarella, cipolla di Tropea caramellata, filetti di tonno, emulsione di 'nduja e polvere di olive nere",
       "price_small": "9",
       "price_large": "19",
-      "type": "limited",
+      "type": "special",
       "image": ""
     }
   ]

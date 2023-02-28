@@ -1,11 +1,8 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col mt-5 mb-4 mx-auto">
-                <img src="../../assets/logo.png" class="logo-img clickable" alt="logo" @click="pushRoute('/')"/>
-            </div>
-        </div>
+    <div class="py-5 mb-5 mx-auto">
+      <img src="../../assets/logo.png" class="logo-img clickable" alt="logo" @click="pushRoute('/')"/>
     </div>
+
 </template>
 
 <script>

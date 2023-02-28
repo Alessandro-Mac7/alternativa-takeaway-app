@@ -1,52 +1,90 @@
 {
-  "fried": [
+  "frieds": [
     {
-      "name": "Coca cola",
-      "price_small": "2",
-      "price_large": "3",
-      "type": "soft"
+      "key": 1,
+      "name": "Arancino alla nduja",
+      "ingredients": "riso, mozzarella e 'nduja",
+      "price_small": "1,50",
+      "type": "arancino"
     },
     {
-      "name": "Acqua",
-      "price_small": "2",
-      "price_large": "3",
-      "type": "soft"
+      "key": 2,
+      "name": "Arancino classico",
+      "ingredients": "riso, ragù di carne, mozzarella, prosciutto cotto e piselli",
+      "price_small": "1,50",
+      "type": "arancino"
     },
     {
-      "name": "Fanta",
-      "price_small": "2",
-      "price_large": "3",
-      "type": "soft"
+      "key": 3,
+      "name": "Crocchetta di patate",
+      "price_small": "1",
+      "type": "crocchetta"
     },
     {
-      "name": "Brasilena",
-      "price_small": "2",
-      "price_large": "3",
-      "type": "soft"
+      "key": 4,
+      "name": "Crocchetta di riso",
+      "price_small": "1",
+      "type": "crocchetta"
     },
     {
-      "name": "OBL",
-      "price_small": "2",
-      "price_large": "",
-      "type": "beer"
+      "key": 23,
+      "name": "Polpetta di carne",
+      "price_small": "1",
+      "type": "crocchetta"
     },
     {
-      "name": "Peroni",
-      "price_small": "2",
-      "price_large": "3",
-      "type": "beer"
+      "key": 5,
+      "name": "Polpetta di melanzane",
+      "price_small": "1",
+      "type": "crocchetta"
     },
     {
-      "name": "Nastro Azzurro",
-      "price_small": "2",
-      "price_large": "3",
-      "type": "beer"
+      "key": 6,
+      "name": "Crocchetta ai Funghi Porcini",
+      "price_small": "1",
+      "type": "crocchetta"
     },
     {
-      "name": "Heineken",
-      "price_small": "2",
-      "price_large": "3",
-      "type": "beer"
+      "key": 7,
+      "name": "Calzone classico",
+      "ingredients": "mozzarella, pomodoro e prosciutto cotto",
+      "price_small": "1,50",
+      "type": "fried"
+    },
+    {
+      "key": 8,
+      "name": "Calzone al salame",
+      "ingredients": "mozzarella, pomodoro e schiacciata piccante",
+      "price_small": "1,50",
+      "type": "fried"
+    },
+    {
+      "key": 9,
+      "name": "Calzone mozzarella e pepe",
+      "ingredients": "pomodoro, mozzarella e pepe nero",
+      "price_small": "1,50",
+      "type": "fried"
+    },
+    {
+      "key": 10,
+      "name": "Montanarina",
+      "ingredients": "pomodoro, formaggio e basilico",
+      "price_small": "1,50",
+      "type": "fried"
+    },
+    {
+      "key": 11,
+      "name": "Frittatina di pasta",
+      "ingredients": "bucatini, besciamella, mozzarella, piselli e prosciutto",
+      "price_small": "1.5",
+      "type": "small"
+    },
+    {
+      "key": 11,
+      "name": "Frittatina calabrese",
+      "ingredients": "bucatini, besciamella, mozzarella, piselli e salsiccia",
+      "price_small": "1.5",
+      "type": "arancino"
     }
   ]
 }

@@ -1,18 +1,22 @@
 <template>
   <section>
     <h1> {{ title }} </h1>
-    <div class="row text-center" v-for="(pizza) in data" v-bind:key="pizza.key">
+    <div class="row text-center" v-for="(d) in data" v-bind:key="d.key">
       <div class="col-md-12 ">
         <p class="name">
-          {{ pizza.name }} &nbsp;
-          <img src="../../assets/icon/small.png" class="icon" alt="">
-          {{ pizza.price_small }} &nbsp;
-          <img src="../../assets/icon/large.png" class="icon" alt="">
-          {{ pizza.price_large }}
+          <strong>{{ d.name }} &nbsp;</strong>
+          <img v-show="d.price_small && !beverage && !fritti" src="../../assets/icon/small.png" class="icon" alt="">
+          <img v-show="d.price_small && d.type === 'soft'" src="../../assets/icon/small-b.png" class="icon-b" alt="">
+          <img v-show="d.price_small && d.type === 'beer'" src="../../assets/icon/beer.png" class="icon-b" alt="">
+          <span class="color4">{{ d.price_small }} &nbsp;</span>
+          <img v-show="d.price_large && !beverage" src="../../assets/icon/large.png" class="icon" alt="">
+          <img v-show="d.price_large && beverage" src="../../assets/icon/large-b.png" class="icon-b" alt="">
+          <span class="color5">{{ d.price_large }}</span>
         </p>
       </div>
+
       <div class="col-md-12">
-        <p class="ingredients">{{ pizza.ingredients }}</p>
+        <p class="ingredients">{{ d.ingredients }}</p>
       </div>
     </div>
   </section>
@@ -20,7 +24,7 @@
 
 <script>
 export default {
-  props: ['title', 'data']
+  props: ['title', 'data', 'beverage', 'fritti']
 }
 </script>
 
@@ -35,9 +39,11 @@ h1 {
 }
 
 .icon {
+  width: 1.6rem;
+}
+.icon-b {
   width: 1.3rem;
 }
-
 .name {
   font-family: 'Mynerve', cursive;
   font-size: 1.6rem;

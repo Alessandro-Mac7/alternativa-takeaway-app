@@ -1,22 +1,24 @@
 <template>
-  <section class="container">
-    <p class="fw-bold my-5">
-      <img src="../assets/icon/small.png" class="icon" alt=""> = piccola &nbsp;
-      <img src="../assets/icon/large.png" class="icon" alt=""> = family
-    </p>
-    <menu-layout title="Limited" :data="limitedPizzaMenu" />
-    <menu-layout title="Le Rosse" :data="redPizzaMenu" />
-    <menu-layout title="Le Bianche" :data="whitePizzaMenu" />
-    <menu-layout title="Le Speciali" :data="specialPizzaMenu" />
-    <div class="row mt-5 ">
-      <div class="col-12 text-center pb-4">
-        <p class="small ">
-          * ogni ingrediente aggiunto costa 1€
-        </p>
+    <section class="container">
+      <p class="fw-bold my-5">
+        <img src="../assets/icon/small.png" class="icon" alt=""> = piccola &nbsp;
+        <img src="../assets/icon/large.png" class="icon" alt=""> = family
+      </p>
+      <menu-layout v-show="hasLimitedPizzaMenu"  title="Limited" :data="limitedPizzaMenu" />
+      <menu-layout title="Le Rosse" :data="redPizzaMenu" />
+      <menu-layout title="Le Bianche" :data="whitePizzaMenu" />
+      <menu-layout title="Le Speciali" :data="specialPizzaMenu" />
+      <div class="row mt-5 ">
+        <div class="col-12 text-center pb-4">
+          <p class="small ">
+            * ogni ingrediente aggiunto costa 1€
+          </p>
+          <p class="small ">
+            ** si possono scegliere al massimo due gusti solo per il formato Family
+          </p>
+        </div>
       </div>
-    </div>
-
-  </section>
+    </section>
 </template>
 
 <script>
@@ -44,6 +46,9 @@ export default {
     },
     limitedPizzaMenu() {
       return this.$store.getters['menu/limitedPizzaMenu'];
+    },
+    hasLimitedPizzaMenu() {
+      return this.$store.getters['menu/hasLimitedPizzaMenu'];
     }
   },
 }
@@ -51,7 +56,7 @@ export default {
 
 <style>
 .icon {
-  width: 1.3rem;
+  width: 2.4rem;
 }
 p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
