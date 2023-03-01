@@ -1,6 +1,8 @@
 <template>
   <section class="container">
-
+      <div v-if="isLoading">
+        <base-spinner></base-spinner>
+      </div>
 <!--    <div class="row g-4">-->
 <!--      <div class="col-md-4">-->
 <!--        <base-app-button class="bg-1" title="Indietro" @click="pushRoute('pizze')"/>-->
@@ -42,10 +44,28 @@ import PizzaCarousel from '@/components/app/PizzaCarousel'
 export default {
   components: {MenuLayout, PizzaCarousel},
   created() {
+    let imageLoaded = 0;
+    this.isLoading = true
+    for (const imageSrc of this.pizze) {
+      const img = new Image();
+      img.src = this.helper.getImgUrl(imageSrc);
+
+      img.onload = () => {
+        imageLoaded++;
+
+        if (imageLoaded === this.pizze.length) {
+          console.log("Done !");
+          this.isLoading = false;
+        }
+
+        console.log(imageLoaded);
+      };
+    }
     // this.loadPage("approfondimenti");
   },
   data() {
     return {
+      helper: this.$util,
       isLoading: false,
       pizze: ['pizze/tropena.png', 'pizze/mortazza.png', 'pizze/colorata.png', 'pizze/diavola.png','pizze/parmigiana.png','pizze/silana.png']
     };
