@@ -1,8 +1,10 @@
 <template>
   <section class="container">
+
     <div v-if="isLoading">
       <base-spinner></base-spinner>
     </div>
+
     <base-dialog :show="!!allergeni" title="Allergeni" @close="cleanAllergeniDialog">
       <div class="text-start">
           Alcuni prodotti possono essere surgelati all’origine o congelati in loco (mediante abbattimento rapido di

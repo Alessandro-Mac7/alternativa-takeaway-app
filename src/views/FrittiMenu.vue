@@ -1,5 +1,11 @@
 <template>
   <section class="container">
+    <div v-if="isLoading">
+      <base-spinner></base-spinner>
+    </div>
+
+    <pizza-carousel :data="fritti"/>
+
     <menu-layout title="I Fritti" :data="fried" :fritti="true"/>
     <menu-layout title="Arancini e Frittatine" :data="arancini" :fritti="true"/>
     <menu-layout title="Polpette e Crocchette" :data="crocchette" :fritti="true"/>
@@ -18,15 +24,39 @@
 
 <script>
 import MenuLayout from "@/components/app/MenuLayout";
+import PizzaCarousel from "@/components/app/PizzaCarousel";
 
 export default {
-  components: {MenuLayout},
+  components: {MenuLayout, PizzaCarousel},
   created() {
-    // this.loadPage("approfondimenti");
+    let imageLoaded = 0;
+    this.isLoading = true
+    for (const imageSrc of this.fritti) {
+      const img = new Image();
+      img.src = this.helper.getImgUrl(imageSrc);
+
+      img.onload = () => {
+        imageLoaded++;
+        if (imageLoaded === this.fritti.length) {
+          this.isLoading = false;
+        }
+
+        console.log(imageLoaded);
+      };
+    }
   },
   data() {
     return {
+      helper: this.$util,
       isLoading: false,
+      fritti: [
+        'fritti/nduja.png',
+        'fritti/arancino.png',
+        'fritti/funghi.png',
+        'fritti/carne.png'
+        // 'fritti/melanzane.png',
+        // 'fritti/patate.png'
+      ]
     };
   },
   computed: {
