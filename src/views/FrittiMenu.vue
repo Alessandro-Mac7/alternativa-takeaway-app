@@ -4,6 +4,15 @@
     <menu-layout title="Arancini e Frittatine" :data="arancini" :fritti="true"/>
     <menu-layout title="Polpette e Crocchette" :data="crocchette" :fritti="true"/>
 
+    <div class="row pb-5 g-4">
+      <div class="col-md-4">
+        <base-app-button class="bg-2" title="Pizze" @click="pushRoute('pizze')"/>
+      </div>
+      <div class="col-md-4">
+        <base-app-button class="bg-3" title="Beverage" @click="pushRoute('beverage')"/>
+      </div>
+    </div>
+
   </section>
 </template>
 
@@ -31,6 +40,11 @@ export default {
       return this.$store.getters['menu/fried'];
     },
   },
+  methods: {
+    pushRoute(route) {
+      this.$router.push(route);
+    }
+  }
 
 }
 </script>

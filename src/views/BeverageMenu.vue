@@ -8,6 +8,15 @@
     <menu-layout title="Soft Drinks" :data="beverageSoft" :beverage="true"/>
     <menu-layout title="Le Birre" :data="beverageBeer" :beverage="true"/>
 
+    <div class="row pb-5 g-4">
+      <div class="col-md-4">
+        <base-app-button class="bg-2" title="Pizze" @click="pushRoute('pizze')"/>
+      </div>
+      <div class="col-md-4">
+        <base-app-button class="bg-3" title="Beverage" @click="pushRoute('fritti')"/>
+      </div>
+    </div>
+
   </section>
 </template>
 
@@ -15,23 +24,28 @@
 import MenuLayout from "@/components/app/MenuLayout";
 
 export default {
-    components: {MenuLayout},
-    created() {
-      // this.loadPage("approfondimenti");
+  components: {MenuLayout},
+  created() {
+    // this.loadPage("approfondimenti");
+  },
+  data() {
+    return {
+      isLoading: false,
+    };
+  },
+  computed: {
+    beverageSoft() {
+      return this.$store.getters['menu/beverageSoft'];
     },
-    data() {
-      return {
-        isLoading: false,
-      };
-    },
-    computed: {
-      beverageSoft() {
-        return this.$store.getters['menu/beverageSoft'];
-      },
-      beverageBeer() {
-        return this.$store.getters['menu/beverageBeer'];
-      }
-    },
+    beverageBeer() {
+      return this.$store.getters['menu/beverageBeer'];
+    }
+  },
+  methods: {
+    pushRoute(route) {
+      this.$router.push(route);
+    }
+  }
 
 }
 </script>

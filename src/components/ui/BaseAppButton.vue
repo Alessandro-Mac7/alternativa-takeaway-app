@@ -19,6 +19,8 @@
   -webkit-border-radius: 1.563rem;
   -moz-border-radius: 1.563rem;
   border-radius: 1.563rem;
+  border-width: 0.15rem;
+  border-color: #181717;
   cursor: pointer;
   background-color: #5c924a;
   transition: all .1s;

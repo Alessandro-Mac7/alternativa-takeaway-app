@@ -1,20 +1,9 @@
 <template>
   <section class="container">
-      <div v-if="isLoading">
-        <base-spinner></base-spinner>
-      </div>
-<!--    <div class="row g-4">-->
-<!--      <div class="col-md-4">-->
-<!--        <base-app-button class="bg-1" title="Indietro" @click="pushRoute('pizze')"/>-->
-<!--      </div>-->
-<!--      <div class="col-md-4">-->
-<!--        <base-app-button class="bg-2" title="Fritti" @click="pushRoute('fritti')"/>-->
-<!--      </div>-->
-<!--      <div class="col-md-4">-->
-<!--        <base-app-button class="bg-3" title="Beverage" @click="pushRoute('beverage')"/>-->
-<!--      </div>-->
-<!--    </div>-->
-    <pizza-carousel :data="pizze" />
+    <div v-if="isLoading">
+      <base-spinner></base-spinner>
+    </div>
+    <pizza-carousel :data="pizze"/>
 
     <p class="fw-bold my-5">
       <img src="../assets/icon/small.png" class="icon" alt=""> = tonda &nbsp;
@@ -24,16 +13,25 @@
     <menu-layout title="Le Rosse" :data="redPizzaMenu"/>
     <menu-layout title="Le Bianche" :data="whitePizzaMenu"/>
     <menu-layout title="Le Speciali" :data="specialPizzaMenu"/>
-    <div class="row mt-5 ">
+
+    <div class="row my-5">
       <div class="col-12 text-center pb-4">
         <p class="small ">
-          * ogni ingrediente aggiunto costa 1€
-        </p>
-        <p class="small ">
+          * ogni ingrediente aggiunto costa 1€<br>
           ** si possono scegliere al massimo due gusti solo per il formato Family
         </p>
       </div>
     </div>
+
+    <div class="row pb-5 g-4">
+      <div class="col-md-4">
+        <base-app-button class="bg-2" title="Fritti" @click="pushRoute('fritti')"/>
+      </div>
+      <div class="col-md-4">
+        <base-app-button class="bg-3" title="Beverage" @click="pushRoute('beverage')"/>
+      </div>
+    </div>
+
   </section>
 </template>
 
@@ -52,9 +50,7 @@ export default {
 
       img.onload = () => {
         imageLoaded++;
-
         if (imageLoaded === this.pizze.length) {
-          console.log("Done !");
           this.isLoading = false;
         }
 
@@ -67,7 +63,7 @@ export default {
     return {
       helper: this.$util,
       isLoading: false,
-      pizze: ['pizze/tropena.png', 'pizze/mortazza.png', 'pizze/colorata.png', 'pizze/diavola.png','pizze/parmigiana.png','pizze/silana.png']
+      pizze: ['pizze/tropena.png', 'pizze/mortazza.png', 'pizze/colorata.png', 'pizze/diavola.png', 'pizze/parmigiana.png', 'pizze/silana.png']
     };
   },
   computed: {
@@ -87,6 +83,11 @@ export default {
       return this.$store.getters['menu/hasLimitedPizzaMenu'];
     }
   },
+  methods: {
+    pushRoute(route) {
+      this.$router.push(route);
+    }
+  }
 }
 </script>
 
