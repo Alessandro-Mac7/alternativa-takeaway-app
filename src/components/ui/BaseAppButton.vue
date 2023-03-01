@@ -40,15 +40,15 @@
 
 
 .bg-1 {
-  background-color: #977548;
+  background-color: #a12931;
 }
 
 .bg-2 {
-  background-color: #9f843d;
+  background-color: #a06325;
 }
 
 .bg-3 {
-  background-color: #afac52;
+  background-color: #969341;
 }
 
 /* Small devices (landscape phones, 576px and up)

@@ -21,12 +21,12 @@ section {
   font-family: 'Mistrully', sans-serif;
 }
 .bg-1 {
-  background-color: #7B7A5B;
+  background-color: #585045;
   min-height: 100%;
 
 }
 .bg-2 {
-  background-color: #866042;
+  background-color: #96754a;
   min-height: 100%;
 
 }
@@ -36,7 +36,7 @@ section {
 
 }
 .bg-4 {
-  background-color: #70514e;
+  background-color: #5e4931;
   min-height: 100%;
 
 }
