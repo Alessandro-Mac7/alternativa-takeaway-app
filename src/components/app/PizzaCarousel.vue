@@ -3,7 +3,7 @@
     <image-dialog :show="!!image.show" :imageLink="image.link" @close="cleanImageDialog"></image-dialog>
     <div class="row">
       <div class="col-md-12">
-        <Carousel :settings="settings" :pauseAutoplayOnHover="true" :transition="1500" :autoplay="5000"
+        <Carousel :settings="settings" :pauseAutoplayOnHover="true"
                   :wrap-around="true" :breakpoints="breakpoints" class="mb-3">
           <Slide v-for="(img, index) in data" :key="index">
             <div class="carousel__item">

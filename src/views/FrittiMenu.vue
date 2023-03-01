@@ -10,7 +10,7 @@
     <menu-layout title="Arancini e Frittatine" :data="arancini" :fritti="true"/>
     <menu-layout title="Polpette e Crocchette" :data="crocchette" :fritti="true"/>
 
-    <div class="row pb-5 g-4">
+    <div class="row mt-5 pb-5 g-4">
       <div class="col-md-6">
         <base-app-button class="bg-2" title="Pizze" @click="pushRoute('pizze')"/>
       </div>

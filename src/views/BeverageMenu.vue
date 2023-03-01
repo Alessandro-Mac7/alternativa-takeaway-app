@@ -8,7 +8,7 @@
     <menu-layout title="Soft Drinks" :data="beverageSoft" :beverage="true"/>
     <menu-layout title="Le Birre" :data="beverageBeer" :beverage="true"/>
 
-    <div class="row pb-5 g-4">
+    <div class="row mt-5 pb-5 g-4">
       <div class="col-md-6">
         <base-app-button class="bg-2" title="Pizze" @click="pushRoute('pizze')"/>
       </div>
