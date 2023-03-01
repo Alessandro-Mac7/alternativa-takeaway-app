@@ -31,12 +31,12 @@ section {
 
 }
 .bg-3 {
-  background-color: #AFAC52;
+  background-color: #8d8b4a;
   min-height: 100%;
 
 }
 .bg-4 {
-  background-color: #b4874b;
+  background-color: #70514e;
   min-height: 100%;
 
 }

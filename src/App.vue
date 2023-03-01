@@ -5,14 +5,16 @@
       <component :is="Component" />
     </transition>
   </router-view>
+  <app-footer/>
 </template>
 
 <script>
 // @ is an alias to /src
 import AppHeader from '@/components/layout/AppHeader.vue';
+import AppFooter from '@/components/layout/AppFooter.vue';
 
 export default {
-  components: { AppHeader },
+  components: { AppHeader, AppFooter },
 }
 
 </script>
@@ -55,7 +57,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ece2e2;
+  color: #c4bfb4;
   background-color: #393939;
   min-height: 100vh;
 }

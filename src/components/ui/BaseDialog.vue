@@ -50,15 +50,16 @@ export default {
 
 dialog {
   position: fixed;
-  top: 20vh;
-  left: 10%;
-  width: 80%;
+  top: 6vh;
+  left: 5%;
+  width: 90%;
+  max-height: 50rem;
   z-index: 100;
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: #e5eadf;
   color: #6e4f3a;
   -webkit-border-radius: 1.563rem;
@@ -74,6 +75,10 @@ header {
 section {
   padding: 1rem;
   font-size: 0.80rem;
+}
+
+.container.dialog {
+  height: 50rem !important;
 }
 
 menu {

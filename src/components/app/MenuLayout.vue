@@ -51,12 +51,6 @@ h1 {
   line-height: 1;
 }
 
-.number {
-  font-family: 'Mistrully', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.2;
-}
-
 .ingredients {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.1rem;
