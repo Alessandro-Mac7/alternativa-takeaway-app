@@ -5,11 +5,11 @@
       <dialog open v-if="show">
         <header>
           <slot name="header">
-            <h1 class="text-center">{{ title }}</h1>
+            <h1 class="pt-4 text-center">{{ title }}</h1>
           </slot>
         </header>
         <section class="container mb-5 text-center">
-          <slot ></slot>
+          <slot></slot>
         </section>
       </dialog>
     </transition>
@@ -59,7 +59,7 @@ dialog {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-color: #eff0eb;
+  background-color: #e5eadf;
   color: #6e4f3a;
   -webkit-border-radius: 1.563rem;
   -moz-border-radius: 1.563rem;
@@ -68,6 +68,7 @@ dialog {
 
 header {
   padding: 1rem;
+  font-family: 'Mistrully', sans-serif;
 }
 
 section {

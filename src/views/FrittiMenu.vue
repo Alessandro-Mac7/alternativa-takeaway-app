@@ -5,10 +5,10 @@
     <menu-layout title="Polpette e Crocchette" :data="crocchette" :fritti="true"/>
 
     <div class="row pb-5 g-4">
-      <div class="col-md-4">
+      <div class="col-md-6">
         <base-app-button class="bg-2" title="Pizze" @click="pushRoute('pizze')"/>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6">
         <base-app-button class="bg-3" title="Beverage" @click="pushRoute('beverage')"/>
       </div>
     </div>

@@ -14,7 +14,7 @@
           </a>
         </div>
       </div>
-      <app-quote text="panza mia fatti capanna" author="Proverbio calabrese" />
+      <app-quote text="panza mia fhatti capanna" author="Proverbio calabrese" />
       <img src="../assets/home-full.png" class="img-fluid img-app" alt="pizza-bg">
     </div>
     <base-section color="1">
