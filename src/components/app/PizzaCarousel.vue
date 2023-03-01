@@ -1,15 +1,18 @@
 <template>
+  <section>
+    <image-dialog :show="!!image.show" :imageLink="image.link" @close="cleanImageDialog"></image-dialog>
   <div class="row">
     <div class="col-md-12">
       <Carousel :settings="settings" :pauseAutoplayOnHover="true" :transition="1500" :autoplay="5000" :wrap-around="true" :breakpoints="breakpoints" class="mb-3">
         <Slide v-for="(img, index) in data" :key="index">
           <div class="carousel__item">
-            <img :src=helper.getImgUrl(img) class="img-fluid pizza-img" alt="imageUrl">
+            <img :src=helper.getImgUrl(img) @click="showImage(img)" class="img-fluid pizza-img" alt="imageUrl">
           </div>
         </Slide>
       </Carousel>
     </div>
   </div>
+  </section>
 </template>
 
 <script>
@@ -21,6 +24,10 @@ export default {
   data() {
     return {
       helper: this.$util,
+      image: {
+        show: null,
+        link: ''
+      },
       settings: {
         itemsToShow: 1,
         snapAlign: 'center',
@@ -34,6 +41,16 @@ export default {
       }
     };
   },
+  methods: {
+    showImage(link) {
+      this.image.show = true;
+      this.image.link = link;
+    },
+    cleanImageDialog() {
+      this.image.show = null;
+      this.image.link = '';
+    }
+  }
 };
 </script>
 

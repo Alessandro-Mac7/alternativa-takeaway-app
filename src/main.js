@@ -12,6 +12,7 @@ import BaseSpinner from '@/components/ui/BaseSpinner.vue'
 import BaseToast from '@/components/ui/BaseToast.vue'
 import BaseSection from '@/components/ui/BaseSection.vue'
 import BaseAppButton from '@/components/ui/BaseAppButton.vue'
+import ImageDialog from '@/components/ui/ImageDialog.vue'
 
 const app = createApp(App)
 app.use(router);
@@ -24,5 +25,6 @@ app.component('base-dialog', BaseDialog);
 app.component('base-toast', BaseToast);
 app.component('base-spinner', BaseSpinner);
 app.component('base-section', BaseSection);
+app.component('image-dialog', ImageDialog);
 
 app.mount('#app');
