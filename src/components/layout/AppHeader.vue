@@ -1,5 +1,5 @@
 <template>
-    <div class="py-5 mb-5 mx-auto">
+    <div class="py-5 mb-4 mx-auto">
       <img src="../../assets/logo.png" class="logo-img clickable" alt="logo" @click="pushRoute('/')"/>
     </div>
 

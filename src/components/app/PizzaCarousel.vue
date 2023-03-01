@@ -1,0 +1,42 @@
+<template>
+  <div class="row">
+    <div class="col-md-12">
+      <Carousel :pauseAutoplayOnHover="true" :transition="1500" :autoplay="5000" :wrap-around="true" :breakpoints="breakpoints" class="mb-3">
+        <Slide v-for="(img, index) in data" :key="index">
+          <div class="carousel__item">
+            <img :src=helper.getImgUrl(img) class="img-fluid pizza-img" alt="imageUrl">
+          </div>
+        </Slide>
+      </Carousel>
+    </div>
+  </div>
+</template>
+
+<script>
+import {Carousel, Slide} from "vue3-carousel";
+
+export default {
+  components: {Carousel, Slide},
+  props: ['data'],
+  data() {
+    return {
+      helper: this.$util,
+      breakpoints: {
+        // 700px and up
+        300: {
+          itemsToShow: 1.4,
+        },
+      }
+    };
+  },
+};
+</script>
+
+<style scoped>
+.pizza-img{
+  max-width: 16rem;
+}
+.carousel__slide {
+  padding: 0.3rem;
+}
+</style>

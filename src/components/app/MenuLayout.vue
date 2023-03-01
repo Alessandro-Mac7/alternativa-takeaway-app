@@ -8,10 +8,10 @@
           <img v-show="d.price_small && !beverage && !fritti" src="../../assets/icon/small.png" class="icon" alt="">
           <img v-show="d.price_small && d.type === 'soft'" src="../../assets/icon/small-b.png" class="icon-b" alt="">
           <img v-show="d.price_small && d.type === 'beer'" src="../../assets/icon/beer.png" class="icon-b" alt="">
-          <span class="color4">{{ d.price_small }} &nbsp;</span>
+          <span class="fw-bold color4">{{ d.price_small }} &nbsp;</span>
           <img v-show="d.price_large && !beverage" src="../../assets/icon/large.png" class="icon" alt="">
           <img v-show="d.price_large && beverage" src="../../assets/icon/large-b.png" class="icon-b" alt="">
-          <span class="color5">{{ d.price_large }}</span>
+          <span class="fw-bold color5">{{ d.price_large }}</span>
         </p>
       </div>
 
@@ -36,6 +36,7 @@ h1 {
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-color: #8f2323;
+  font-size: 2.5rem;
 }
 
 .icon {

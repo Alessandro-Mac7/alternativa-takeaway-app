@@ -56,7 +56,7 @@
     {
       "key": 5,
       "name": "Parmigiana",
-      "ingredients": "pomodoro, mozzarella e melanzane fritte",
+      "ingredients": "pomodoro, mozzarella, melanzane fritte e parmigiano",
       "price_small": "7",
       "price_large": "16",
       "type": "red",
@@ -74,7 +74,7 @@
     {
       "key": 7,
       "name": "Ortolana",
-      "ingredients": "mozzarella, melanzane e zucchine fritte e peperoni arrostiti",
+      "ingredients": "mozzarella, pachino, melanzane e zucchine fritte e peperoni arrostiti",
       "price_small": "7",
       "price_large": "16",
       "type": "white",
@@ -119,7 +119,7 @@
     {
       "key": 12,
       "name": "Silana",
-      "ingredients": "Patate a fette, salsiccia, mozzarella, cacio cavallo affumicato Silano e rosmarino",
+      "ingredients": "Patate al rosmarino, salsiccia, mozzarella, cacio cavallo affumicato Silano",
       "price_small": "8",
       "price_large": "16",
       "type": "white",
@@ -163,7 +163,7 @@
     },
     {
       "key": 17,
-      "name": "Brontolo",
+      "name": "Mortazza",
       "ingredients": "mozzarella, mortadella, pesto di pistacchio e stracciatella",
       "price_small": "8",
       "price_large": "16",

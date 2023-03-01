@@ -5,6 +5,7 @@ import store from '@/store';
 import router from '@/router';
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap';
+import 'vue3-carousel/dist/carousel.css';
 
 import BaseDialog from '@/components/ui/BaseDialog.vue'
 import BaseSpinner from '@/components/ui/BaseSpinner.vue'

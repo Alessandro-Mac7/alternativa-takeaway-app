@@ -1,37 +1,53 @@
 <template>
-    <section class="container">
-      <p class="fw-bold my-5">
-        <img src="../assets/icon/small.png" class="icon" alt=""> = piccola &nbsp;
-        <img src="../assets/icon/large.png" class="icon" alt=""> = family
-      </p>
-      <menu-layout v-show="hasLimitedPizzaMenu"  title="Limited" :data="limitedPizzaMenu" />
-      <menu-layout title="Le Rosse" :data="redPizzaMenu" />
-      <menu-layout title="Le Bianche" :data="whitePizzaMenu" />
-      <menu-layout title="Le Speciali" :data="specialPizzaMenu" />
-      <div class="row mt-5 ">
-        <div class="col-12 text-center pb-4">
-          <p class="small ">
-            * ogni ingrediente aggiunto costa 1€
-          </p>
-          <p class="small ">
-            ** si possono scegliere al massimo due gusti solo per il formato Family
-          </p>
-        </div>
+  <section class="container">
+
+<!--    <div class="row g-4">-->
+<!--      <div class="col-md-4">-->
+<!--        <base-app-button class="bg-1" title="Indietro" @click="pushRoute('pizze')"/>-->
+<!--      </div>-->
+<!--      <div class="col-md-4">-->
+<!--        <base-app-button class="bg-2" title="Fritti" @click="pushRoute('fritti')"/>-->
+<!--      </div>-->
+<!--      <div class="col-md-4">-->
+<!--        <base-app-button class="bg-3" title="Beverage" @click="pushRoute('beverage')"/>-->
+<!--      </div>-->
+<!--    </div>-->
+    <pizza-carousel :data="pizze" />
+
+    <p class="fw-bold my-5">
+      <img src="../assets/icon/small.png" class="icon" alt=""> = tonda &nbsp;
+      <img src="../assets/icon/large.png" class="icon" alt=""> = in teglia
+    </p>
+    <menu-layout v-show="hasLimitedPizzaMenu" title="Limited" :data="limitedPizzaMenu"/>
+    <menu-layout title="Le Rosse" :data="redPizzaMenu"/>
+    <menu-layout title="Le Bianche" :data="whitePizzaMenu"/>
+    <menu-layout title="Le Speciali" :data="specialPizzaMenu"/>
+    <div class="row mt-5 ">
+      <div class="col-12 text-center pb-4">
+        <p class="small ">
+          * ogni ingrediente aggiunto costa 1€
+        </p>
+        <p class="small ">
+          ** si possono scegliere al massimo due gusti solo per il formato Family
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 </template>
 
 <script>
 import MenuLayout from "@/components/app/MenuLayout";
+import PizzaCarousel from '@/components/app/PizzaCarousel'
 
 export default {
-  components: {MenuLayout},
+  components: {MenuLayout, PizzaCarousel},
   created() {
     // this.loadPage("approfondimenti");
   },
   data() {
     return {
       isLoading: false,
+      pizze: ['pizze/tropena.png', 'pizze/mortazza.png', 'pizze/colorata.png', 'pizze/diavola.png','pizze/parmigiana.png','pizze/silana.png']
     };
   },
   computed: {
@@ -58,6 +74,7 @@ export default {
 .icon {
   width: 2.4rem;
 }
+
 p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.3rem;
