@@ -39,6 +39,10 @@ export default {
           itemsToShow: 1.4,
           snapAlign: 'center'
         },
+        700: {
+          itemsToShow: 2.4,
+          snapAlign: 'center'
+        },
       }
     };
   },
