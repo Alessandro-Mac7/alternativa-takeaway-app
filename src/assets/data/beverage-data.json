@@ -2,13 +2,13 @@
   "drinks": [
     {
       "name": "Coca Cola",
-      "price_small": "1.50",
+      "price_small": "1,50",
       "price_large": "3,50",
       "type": "soft"
     },
     {
       "name": "Coca Cola Zero",
-      "price_small": "1.50",
+      "price_small": "1,50",
       "type": "soft"
     },
     {
@@ -55,17 +55,17 @@
     },
     {
       "name": "Ceres 0,33",
-      "price_small": "3.5",
+      "price_small": "3,50",
       "type": "beer"
     },
     {
       "name": "Icnusa 0,50",
-      "price_small": "3.5",
+      "price_small": "3,50",
       "type": "beer"
     },
     {
       "name": "Franziskaner 0,50",
-      "price_small": "3.5",
+      "price_small": "3,50",
       "type": "beer"
     },
     {

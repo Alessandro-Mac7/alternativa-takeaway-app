@@ -15,6 +15,14 @@
         </p>
       </div>
 
+      <div class="row mb-4 mx-auto text-center">
+        <p class="footer-text-2">
+          Siamo operativi dal <strong class="color4">Lunedì</strong> al <strong class="color4">Sabato</strong> <br>
+          dalle 17:00 alle 22:30 <br>
+          <strong class="color4">Domenica</strong> ci riposiamo 😀
+        </p>
+      </div>
+
       <div class="mb-4">
         <a target="_blank" rel="noopener noreferrer"
            href="https://www.facebook.com/alternativatakeaway/"

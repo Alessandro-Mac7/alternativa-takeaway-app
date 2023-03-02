@@ -53,6 +53,7 @@
         Il sugo di pomodoro, conferisce alla pizza un gusto intenso con una nota di acidità equilibrata.<br>
         L'utilizzo di materie prime eccellenti, permette di creare una pizza unica nel suo genere, con un sapore autentico e un aroma intenso, in grado di soddisfare anche i palati più esigenti.
       </p>
+      <img src="../assets/buffet.png" class=" mt-5 img-fluid img-app" alt="pizza-bg">
     </base-section>
 
   </section>
