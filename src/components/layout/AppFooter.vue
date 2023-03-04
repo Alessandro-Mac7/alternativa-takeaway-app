@@ -2,7 +2,7 @@
   <footer v-if="show" class="py-5">
     <div class="container">
 
-      <div class="row mb-5 mx-auto text-center">
+      <div class="row mb-5 mx-auto text-center ">
         <img src="../../assets/footer-logo.png" @click="scrollToTop" class="img-fluid img-app" alt="pizza-bg">
       </div>
 
@@ -16,7 +16,7 @@
       </div>
 
       <div class="row mb-4 mx-auto text-center">
-        <p class="footer-text-2">
+        <p class="footer-text-3">
           Siamo operativi dal <strong class="color4">Lunedì</strong> al <strong class="color4">Sabato</strong> <br>
           dalle 17:00 alle 22:30 <br>
           <strong class="color4">Domenica</strong> ci riposiamo 😀
@@ -37,7 +37,7 @@
 
       <div class="row">
         <div class="col-md-12 ">
-          <p class="text-center copy">&copy; Copyright 2023 - Alternativa Take Away. Tutti i diritti riservati.</p>
+          <p class="text-center footer-text-3 copy">&copy; Copyright 2023 - Alternativa Take Away. Tutti i diritti riservati.</p>
         </div>
       </div>
     </div>
@@ -126,5 +126,8 @@ footer {
 
 .footer-text-2 {
   font-family: 'Mynerve', cursive;
+}
+.footer-text-3 {
+  font-family: 'Yanone Kaffeesatz', cursive;
 }
 </style>

@@ -19,7 +19,7 @@
     </div>
     <base-section color="1">
       <div class="row g-4">
-        <div class="col-md-12">
+        <div  class="col-md-12">
           <base-app-button class="bg-1" title="Pizze" @click="pushRoute('pizze')"/>
         </div>
         <div class="col-md-12">
@@ -31,20 +31,27 @@
       </div>
         <img src="../assets/pizza-full.png" class=" mt-5 img-fluid img-app" alt="pizza-bg">
     </base-section>
-    <base-section title="L'Impasto" color="2">
-      <p class="text-center">Creato da una miscela di farine selezionata accuratamente per garantire un equilibrio perfetto tra proteine e amidi,
-        in modo da ottenere una consistenza elastica e un sapore intenso.
-        La lunga lievitazione a temperatura controllata permette di sviluppare al meglio gli aromi e i sapori, conferendo alla pizza una fragranza e un gusto inconfondibile.
-        La consistenza alveolata e soffice dell'impasto, unita ad una crosta croccante e dorata, rende la pizza unica nel suo genere, ideale per ogni occasione e per tutti i palati.</p>
+
+    <base-section title="La Pizza" color="2">
+      <p>
+        La nostra pizza è il frutto di una sinergia tra <strong>tecnica, esperienza e passione</strong>,
+        unita alla scelta attenta delle materie prime e alla giusta dose di  <strong>amore 💖</strong>.
+      </p>
+      <div class="animate__animated animate__pulse animate__infinite infinite"></div>
+
+      <p class="text-center">
+        Utilizziamo una miscela di varie tipoogie di farina per conferire al nostro prodotto
+        un carattere unico e riconoscibile per il suo gusto, la sua leggerezza e soprattutto la sua digeribilità.
+        La pizza viene sottoposta ad un processo di <strong>lievitazione minimo di 48 ore</strong>
+        e tempi di <strong>maturazione</strong> appropriati a <strong>temperatura controllata</strong>,
+        il che garantisce al prodotto finale leggerezza e digeribilità. Una sola pizza a volte potrebbe non essere sufficiente 😊
+      </p>
+      <p>
+        Il nostro desiderio è di offrire un prodotto unico nel quale il gusto, l'aroma e la consistenza si fondono in una sinfonia di sapori,
+        insomma una <br><strong> Pizza con la P maiuscola!</strong>
+      </p>
       <img src="../assets/impasto.png" class="mt-5 img-fluid img-app" alt="pizza-bg">
 
-    </base-section>
-    <base-section title="Le Materie Prime" color="3">
-      <p>L'utilizzo di materie prime eccellenti, come la mozzarella e il sugo di pomodoro, rappresentano un elemento fondamentale per ottenere una pizza straordinaria.<br>
-        La mozzarella di alta qualità, fresca e prodotta con latte locale di altissima qualità. Grazie alla sua freschezza e alla sua consistenza, si unisce agli altri ingredienti, creando una sinergia perfetta tra sapori e consistenze.<br>
-        Il sugo di pomodoro, conferisce alla pizza un gusto intenso con una nota di acidità equilibrata.<br>
-        L'utilizzo di materie prime eccellenti, permette di creare una pizza unica nel suo genere, con un sapore autentico e un aroma intenso, in grado di soddisfare anche i palati più esigenti.
-      </p>
     </base-section>
 
     <base-section title="I Buffet" color="4">

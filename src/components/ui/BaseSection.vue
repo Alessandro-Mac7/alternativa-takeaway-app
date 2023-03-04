@@ -26,7 +26,7 @@ section {
 
 }
 .bg-2 {
-  background-color: #96754a;
+  background-color: #866841;
   min-height: 100%;
 
 }
@@ -36,7 +36,7 @@ section {
 
 }
 .bg-4 {
-  background-color: #5e4931;
+  background-color: #5e5031;
   min-height: 100%;
 
 }

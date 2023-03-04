@@ -1,5 +1,8 @@
 <template>
   <section class="container">
+
+    <img src="../assets/beer-frame.png" class="img-fluid beverage-img" alt="imageUrl">
+
     <p class="fw-bold my-5">
       <img src="../assets/icon/small-b.png" class="icon-b" alt=""> = piccola &nbsp;
       <img src="../assets/icon/large-b.png" class="icon-b" alt=""> = family &nbsp;
@@ -53,5 +56,8 @@ export default {
 <style>
 .icon-b {
   width: 1.6rem;
+}
+.beverage-img {
+  max-width: 16rem !important;
 }
 </style>
