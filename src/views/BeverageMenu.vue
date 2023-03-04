@@ -1,6 +1,8 @@
 <template>
   <section class="container">
-
+    <div v-if="isLoading">
+      <base-spinner></base-spinner>
+    </div>
     <img src="../assets/beer-frame.png" class="img-fluid beverage-img" alt="imageUrl">
 
     <p class="fw-bold my-5">
@@ -29,10 +31,19 @@ import MenuLayout from "@/components/app/MenuLayout";
 export default {
   components: {MenuLayout},
   created() {
-    // this.loadPage("approfondimenti");
+    let imageLoaded = 0;
+    this.isLoading = true
+    const img = new Image();
+    img.src = this.helper.getImgUrl("beer-frame.png");
+
+    img.onload = () => {
+      this.isLoading = false;
+      console.log(imageLoaded);
+    }
   },
   data() {
     return {
+      helper: this.$util,
       isLoading: false,
     };
   },
