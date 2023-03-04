@@ -15,9 +15,9 @@
         </div>
       </div>
       <app-quote text="panza mia fhatti capanna" author="Proverbio calabrese" />
-      <img src="../assets/home-full.png" class="img-fluid img-app" alt="pizza-bg">
+      <img src="../assets/home-full.png" @click="scroll('section1')" class="img-fluid img-app clickable" alt="pizza-bg">
     </div>
-    <base-section color="1">
+    <base-section color="1" id="section1">
       <div class="row g-4">
         <div  class="col-md-12">
           <base-app-button class="bg-1" title="Pizze" @click="pushRoute('pizze')"/>
@@ -29,10 +29,10 @@
           <base-app-button class="bg-3" title="Beverage" @click="pushRoute('beverage')" />
         </div>
       </div>
-        <img src="../assets/pizza-full.png" class=" mt-5 img-fluid img-app" alt="pizza-bg">
+        <img src="../assets/pizza-full.png" @click="scroll('section2')" class=" mt-5 img-fluid img-app clickable" alt="pizza-bg">
     </base-section>
 
-    <base-section title="La Pizza" color="2">
+    <base-section title="La Pizza" id="section2" color="2">
       <p>
         La nostra pizza è il frutto di una sinergia tra <strong>tecnica, esperienza e passione</strong>,
         unita alla scelta attenta delle materie prime e alla giusta dose di  <strong>amore 💖</strong>.
@@ -50,11 +50,11 @@
         Il nostro desiderio è di offrire un prodotto unico nel quale il gusto, l'aroma e la consistenza si fondono in una sinfonia di sapori,
         insomma una <br><strong> Pizza con la P maiuscola!</strong>
       </p>
-      <img src="../assets/impasto.png" class="mt-5 img-fluid img-app" alt="pizza-bg">
+      <img src="../assets/impasto.png" @click="scroll('section3')" class="mt-5 img-fluid img-app clickable" alt="pizza-bg">
 
     </base-section>
 
-    <base-section title="I Buffet" color="4">
+    <base-section title="I Buffet" id="section3" color="4">
       <p>L'utilizzo di materie prime eccellenti, come la mozzarella e il sugo di pomodoro, rappresentano un elemento fondamentale per ottenere una pizza straordinaria.<br>
         La mozzarella di alta qualità, fresca e prodotta con latte locale di altissima qualità. Grazie alla sua freschezza e alla sua consistenza, si unisce agli altri ingredienti, creando una sinergia perfetta tra sapori e consistenze.<br>
         Il sugo di pomodoro, conferisce alla pizza un gusto intenso con una nota di acidità equilibrata.<br>
@@ -74,7 +74,13 @@ export default {
   methods: {
     pushRoute(route) {
       this.$router.push(route);
+    },
+    scroll(id) {
+      document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+      });
     }
+
   }
 }
 </script>

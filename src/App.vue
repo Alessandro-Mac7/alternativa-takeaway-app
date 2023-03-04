@@ -45,6 +45,20 @@ export default {
   url(./assets/fonts/Mistrully.ttf) format("truetype");
 }
 
+.clickable {
+  cursor: pointer;
+  transition: all .1s;
+}
+.clickable:hover {
+  filter: brightness(120%);
+  transform: scale(0.98);
+}
+
+.clickable:focus  {
+  filter: brightness(150%);
+  transform: scale(0.93);
+}
+
 .small-pizza {
   background-image: url("./assets/icon/small.png");
 }
