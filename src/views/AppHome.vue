@@ -17,7 +17,7 @@
       <app-quote text="panza mia fhatti capanna" author="Proverbio calabrese" />
       <p class="text-center my-5">
         Siamo una piccola rosticceria a conduzione familiare nata nel 2012 con l'intento
-        di portare sul tavolo dei nostri clienti un unione tra <strong>tradizione e contemporaneità</strong>.<br>
+        di portare sul tavolo dei nostri clienti <strong>tradizione e contemporaneità</strong>.<br>
         Offriamo diversi servizi tra cui la <strong>consegna domicilio</strong> dei nostri prodotti e la progettazione e realizzazione di <strong>banchetti</strong>.
       </p>
       <img src="../assets/home-full.png" @click="scroll('section1')" class="img-fluid img-app clickable" alt="pizza-bg">
@@ -45,28 +45,18 @@
       <div class="animate__animated animate__pulse animate__infinite infinite"></div>
 
       <p class="text-center">
-        Utilizziamo una miscela di varie tipoogie di farina per conferire al nostro prodotto
+        Utilizziamo una miscela di varie tipologie di farina per conferire al nostro prodotto
         un carattere unico e riconoscibile per il suo gusto, la sua leggerezza e soprattutto la sua digeribilità.
         La pizza viene sottoposta ad un processo di <strong>lievitazione minimo di 48 ore</strong>
         e tempi di <strong>maturazione</strong> appropriati a <strong>temperatura controllata</strong>,
         il che garantisce al prodotto finale leggerezza e digeribilità. Una sola pizza a volte potrebbe non essere sufficiente 😊
       </p>
       <p>
-        Il nostro desiderio è di offrire un prodotto unico nel quale il gusto, l'aroma e la consistenza si fondono in una sinfonia di sapori,
-        insomma una <br><strong> Pizza con la P maiuscola!</strong>
+        Il nostro desiderio è di offrire un prodotto unico nel quale il gusto, l'aroma e la consistenza si fondono in una sinfonia di sapori.
       </p>
-      <img src="../assets/impasto.png" class="mt-5 img-fluid img-app clickable" alt="pizza-bg">
+      <img src="../assets/impasto.png" class="mt-5 img-fluid img-app" alt="pizza-bg">
 
     </base-section>
-
-<!--    <base-section title="I Buffet" id="section3" color="4">-->
-<!--      <p>L'utilizzo di materie prime eccellenti, come la mozzarella e il sugo di pomodoro, rappresentano un elemento fondamentale per ottenere una pizza straordinaria.<br>-->
-<!--        La mozzarella di alta qualità, fresca e prodotta con latte locale di altissima qualità. Grazie alla sua freschezza e alla sua consistenza, si unisce agli altri ingredienti, creando una sinergia perfetta tra sapori e consistenze.<br>-->
-<!--        Il sugo di pomodoro, conferisce alla pizza un gusto intenso con una nota di acidità equilibrata.<br>-->
-<!--        L'utilizzo di materie prime eccellenti, permette di creare una pizza unica nel suo genere, con un sapore autentico e un aroma intenso, in grado di soddisfare anche i palati più esigenti.-->
-<!--      </p>-->
-<!--      <img src="../assets/buffet.png" class=" mt-5 img-fluid img-app" alt="pizza-bg">-->
-<!--    </base-section>-->
 
   </section>
 </template>
