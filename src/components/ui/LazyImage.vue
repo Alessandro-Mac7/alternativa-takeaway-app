@@ -2,7 +2,7 @@
   <div class="lazy-image-wrapper" ref="imageWrapper">
     <transition name="fade" mode="out-in">
       <div v-if="loading && !imageLoaded" class="image-placeholder">
-        <div class="placeholder-spinner"></div>
+        <pizza-spinner size="medium" />
       </div>
       <img
         v-else
@@ -18,8 +18,13 @@
 </template>
 
 <script>
+import PizzaSpinner from './PizzaSpinner.vue';
+
 export default {
   name: 'LazyImage',
+  components: {
+    PizzaSpinner
+  },
   props: {
     src: {
       type: String,
@@ -108,22 +113,8 @@ export default {
   justify-content: center;
   width: 100%;
   height: 200px;
-  background-color: #f8f9fa;
+  background-color: transparent;
   border-radius: 0.375rem;
-}
-
-.placeholder-spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid #e9ecef;
-  border-top: 3px solid #d32f2f;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 
 .fade-enter-active, .fade-leave-active {
