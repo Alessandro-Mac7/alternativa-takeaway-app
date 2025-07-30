@@ -6,7 +6,7 @@
   "scope": "/alternativa-takeaway-app/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#d32f2f",
+  "theme_color": "#ffffff",
   "orientation": "portrait-primary",
   "icons": [
     {

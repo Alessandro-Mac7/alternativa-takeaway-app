@@ -1,18 +1,16 @@
 <template>
   <div class="lazy-image-wrapper" ref="imageWrapper">
-    <transition name="fade" mode="out-in">
-      <div v-if="loading" class="image-placeholder">
-        <base-spinner />
-      </div>
-      <img
-        v-else
-        :src="imageSrc"
-        :alt="alt"
-        :class="imgClass"
-        @load="onImageLoad"
-        @error="onImageError"
-      />
-    </transition>
+    <div v-if="loading" class="image-placeholder">
+      <base-spinner />
+    </div>
+    <img
+      v-show="!loading"
+      :src="imageSrc"
+      :alt="alt"
+      :class="imgClass"
+      @load="onImageLoad"
+      @error="onImageError"
+    />
   </div>
 </template>
 
@@ -105,26 +103,26 @@ export default {
 }
 
 .image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   background-color: transparent;
   border-radius: 0.375rem;
-}
-
-.fade-enter-active, .fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from, .fade-leave-to {
-  opacity: 0;
+  z-index: 2;
 }
 
 img {
   transition: opacity 0.3s ease;
   max-width: 100%;
   height: auto;
+  position: relative;
+  z-index: 1;
 }
 </style>
