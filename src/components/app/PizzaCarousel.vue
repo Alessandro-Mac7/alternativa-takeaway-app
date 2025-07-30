@@ -4,10 +4,18 @@
     <div class="row">
       <div class="col-md-12">
         <Carousel :settings="settings" :pauseAutoplayOnHover="true"
-                  :wrap-around="true" :breakpoints="breakpoints" class="mb-3">
+                  :wrap-around="true" :breakpoints="breakpoints" class="mb-3"
+                  @slide-start="onSlideStart">
           <Slide v-for="(img, index) in data" :key="index">
             <div class="carousel__item">
-              <img :src=helper.getImgUrl(img) @click="showImage(img)" class="img-fluid pizza-img" alt="imageUrl">
+              <lazy-image 
+                :src="helper.getImgUrl(img)" 
+                @click="showImage(img)" 
+                img-class="img-fluid pizza-img" 
+                :alt="`Pizza ${index + 1}`"
+                root-margin="100px"
+                @load="onImageLoad(index)"
+              />
             </div>
           </Slide>
         </Carousel>
@@ -43,8 +51,13 @@ export default {
           itemsToShow: 2.4,
           snapAlign: 'center'
         },
-      }
+      },
+      loadedImages: new Set(),
+      preloadedImages: new Set()
     };
+  },
+  mounted() {
+    this.preloadFirstImages();
   },
   methods: {
     showImage(link) {
@@ -54,6 +67,43 @@ export default {
     cleanImageDialog() {
       this.image.show = null;
       this.image.link = '';
+    },
+    onImageLoad(index) {
+      this.loadedImages.add(index);
+    },
+    onSlideStart(data) {
+      // Preload adjacent images for smooth transitions
+      this.preloadAdjacentImages(data.currentSlideIndex);
+    },
+    preloadFirstImages() {
+      // Preload first few images immediately
+      const imagesToPreload = Math.min(3, this.data.length);
+      for (let i = 0; i < imagesToPreload; i++) {
+        this.preloadImage(i);
+      }
+    },
+    preloadAdjacentImages(currentIndex) {
+      const totalImages = this.data.length;
+      const indicesToPreload = [
+        (currentIndex + 1) % totalImages,
+        (currentIndex + 2) % totalImages,
+        (currentIndex - 1 + totalImages) % totalImages
+      ];
+
+      indicesToPreload.forEach(index => {
+        if (!this.preloadedImages.has(index)) {
+          this.preloadImage(index);
+        }
+      });
+    },
+    preloadImage(index) {
+      if (index >= this.data.length || this.preloadedImages.has(index)) return;
+      
+      const img = new Image();
+      img.onload = () => {
+        this.preloadedImages.add(index);
+      };
+      img.src = this.helper.getImgUrl(this.data[index]);
     }
   }
 };

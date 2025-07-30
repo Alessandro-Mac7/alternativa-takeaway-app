@@ -13,6 +13,7 @@ import BaseToast from '@/components/ui/BaseToast.vue'
 import BaseSection from '@/components/ui/BaseSection.vue'
 import BaseAppButton from '@/components/ui/BaseAppButton.vue'
 import ImageDialog from '@/components/ui/ImageDialog.vue'
+import LazyImage from '@/components/ui/LazyImage.vue'
 
 const app = createApp(App)
 app.use(router);
@@ -26,5 +27,19 @@ app.component('base-toast', BaseToast);
 app.component('base-spinner', BaseSpinner);
 app.component('base-section', BaseSection);
 app.component('image-dialog', ImageDialog);
+app.component('lazy-image', LazyImage);
 
 app.mount('#app');
+
+// Register service worker for PWA
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then((registration) => {
+        console.log('SW registered: ', registration);
+      })
+      .catch((registrationError) => {
+        console.log('SW registration failed: ', registrationError);
+      });
+  });
+}
