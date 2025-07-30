@@ -1,8 +1,8 @@
 <template>
   <div class="lazy-image-wrapper" ref="imageWrapper">
     <transition name="fade" mode="out-in">
-      <div v-if="loading && !imageLoaded" class="image-placeholder">
-        <pizza-spinner size="medium" />
+      <div v-if="loading" class="image-placeholder">
+        <base-spinner />
       </div>
       <img
         v-else
@@ -11,19 +11,18 @@
         :class="imgClass"
         @load="onImageLoad"
         @error="onImageError"
-        :style="{ opacity: imageLoaded ? 1 : 0 }"
       />
     </transition>
   </div>
 </template>
 
 <script>
-import PizzaSpinner from './PizzaSpinner.vue';
+import BaseSpinner from './BaseSpinner.vue';
 
 export default {
   name: 'LazyImage',
   components: {
-    PizzaSpinner
+    BaseSpinner
   },
   props: {
     src: {
@@ -47,7 +46,6 @@ export default {
     return {
       imageSrc: '',
       loading: true,
-      imageLoaded: false,
       observer: null
     };
   },
@@ -88,7 +86,6 @@ export default {
     },
     onImageLoad() {
       this.loading = false;
-      this.imageLoaded = true;
       this.$emit('load');
     },
     onImageError() {

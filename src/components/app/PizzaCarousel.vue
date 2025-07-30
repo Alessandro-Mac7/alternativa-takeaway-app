@@ -51,6 +51,10 @@ export default {
           itemsToShow: 2.4,
           snapAlign: 'center'
         },
+        1024: {
+          itemsToShow: 3,
+          snapAlign: 'center'
+        }
       },
       loadedImages: new Set(),
       preloadedImages: new Set()
@@ -116,5 +120,14 @@ export default {
 
 .carousel__slide {
   padding: 0.3rem;
+  display: flex !important;
+  justify-content: center;
+}
+
+.carousel__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 </style>

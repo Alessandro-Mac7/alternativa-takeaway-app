@@ -6,15 +6,17 @@
     </transition>
   </router-view>
   <app-footer/>
+  <install-banner/>
 </template>
 
 <script>
 // @ is an alias to /src
 import AppHeader from '@/components/layout/AppHeader.vue';
 import AppFooter from '@/components/layout/AppFooter.vue';
+import InstallBanner from '@/components/ui/InstallBanner.vue';
 
 export default {
-  components: { AppHeader, AppFooter },
+  components: { AppHeader, AppFooter, InstallBanner },
 }
 
 </script>
