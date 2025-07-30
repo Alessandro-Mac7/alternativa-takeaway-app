@@ -90,4 +90,17 @@ export default {
   transform: scale(0.9);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #393939;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 </style>
