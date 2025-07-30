@@ -71,20 +71,6 @@
       "ingredients": "pomodoro, formaggio e basilico",
       "price_small": "0,80",
       "type": "fried"
-    },
-    {
-      "key": 11,
-      "name": "Frittatina classica",
-      "ingredients": "bucatini, besciamella, mozzarella, piselli e prosciutto",
-      "price_small": "1.5",
-      "type": "arancino"
-    },
-    {
-      "key": 11,
-      "name": "Frittatina calabrese",
-      "ingredients": "bucatini, besciamella, mozzarella, salsiccia e 'nduja",
-      "price_small": "1.5",
-      "type": "arancino"
     }
   ]
 }
