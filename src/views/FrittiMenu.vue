@@ -7,7 +7,7 @@
     <pizza-carousel :data="fritti"/>
 
     <menu-layout title="I Fritti" :data="fried" :fritti="true"/>
-    <menu-layout title="Arancini e Frittatine" :data="arancini" :fritti="true"/>
+    <menu-layout title="Arancini" :data="arancini" :fritti="true"/>
     <menu-layout title="Polpette e Crocchette" :data="crocchette" :fritti="true"/>
 
     <div class="row mt-5 pb-5 g-4">
