@@ -1,7 +1,10 @@
 <template>
+  <!-- Loading Overlay -->
+  <loading-overlay :show="isLoading" />
+
   <!-- Offline Indicator -->
   <div v-if="!isOnline" class="offline-banner">
-    📶 Sei offline - Il menu è disponibile
+    Sei offline - Il menu e disponibile
   </div>
 
   <app-header/>
@@ -21,14 +24,21 @@ import AppHeader from '@/components/layout/AppHeader.vue';
 import BottomNav from '@/components/layout/BottomNav.vue';
 import FloatingWhatsApp from '@/components/ui/FloatingWhatsApp.vue';
 import ScrollToTop from '@/components/ui/ScrollToTop.vue';
+import LoadingOverlay from '@/components/ui/LoadingOverlay.vue';
 
 export default {
-  components: { AppHeader, BottomNav, FloatingWhatsApp, ScrollToTop },
+  components: { AppHeader, BottomNav, FloatingWhatsApp, ScrollToTop, LoadingOverlay },
 
   data() {
     return {
       isOnline: navigator.onLine
     };
+  },
+
+  computed: {
+    isLoading() {
+      return this.$store.getters['ui/isLoading'];
+    }
   },
 
   mounted() {
