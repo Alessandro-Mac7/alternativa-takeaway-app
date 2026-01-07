@@ -23,7 +23,7 @@ export default {
   width: 100%;
   max-width: 500px;
   z-index: 1;
-  margin: 80px auto;
+  margin: 40px auto 80px;
   align-self: center;
   border-top: solid 1px;
   border-bottom: solid 1px;

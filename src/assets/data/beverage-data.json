@@ -2,30 +2,30 @@
   "drinks": [
     {
       "name": "Coca Cola",
-      "price_small": "1,50",
+      "price_small": "2",
       "price_large": "3,50",
       "type": "soft"
     },
     {
       "name": "Coca Cola Zero",
-      "price_small": "1,50",
+      "price_small": "2",
       "type": "soft"
     },
     {
       "name": "Acqua",
-      "price_small": "0.70",
+      "price_small": "1",
       "price_large": "2,00",
       "type": "soft"
     },
     {
       "name": "Fanta",
-      "price_small": "1,50",
+      "price_small": "2",
       "type": "soft"
     },
     {
       "name": "Brasilena",
       "price_small": "1,50",
-      "price_large": "3",
+      "price_large": "3,50",
       "type": "soft"
     },
     {
@@ -34,43 +34,33 @@
       "type": "beer"
     },
     {
-      "name": "Peroni Gran Riserva Rossa 0,50",
+      "name": "Peroni Gran Riserva Rossa 50 CL",
       "price_small": "4",
       "type": "beer"
     },
     {
-      "name": "Nastro Azzurro 0,33",
+      "name": "Nastro Azzurro 33 CL",
       "price_small": "2",
       "type": "beer"
     },
     {
-      "name": "Nastro Azzurro 0,66",
+      "name": "Nastro Azzurro 66 CL",
+      "price_small": "4",
+      "type": "beer"
+    },
+    {
+      "name": "Ceres 33 CL",
       "price_small": "3,50",
       "type": "beer"
     },
     {
-      "name": "Peroni 0,75",
+      "name": "Icnusa 50 CL",
       "price_small": "3,50",
       "type": "beer"
     },
     {
-      "name": "Ceres 0,33",
+      "name": "Franziskaner 50 CL",
       "price_small": "3,50",
-      "type": "beer"
-    },
-    {
-      "name": "Icnusa 0,50",
-      "price_small": "3,50",
-      "type": "beer"
-    },
-    {
-      "name": "Franziskaner 0,50",
-      "price_small": "3,50",
-      "type": "beer"
-    },
-    {
-      "name": "Becks 0,33",
-      "price_small": "2",
       "type": "beer"
     }
   ]

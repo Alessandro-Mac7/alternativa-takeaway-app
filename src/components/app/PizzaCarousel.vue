@@ -1,50 +1,70 @@
 <template>
   <section>
     <image-dialog :show="!!image.show" :imageLink="image.link" @close="cleanImageDialog"></image-dialog>
-    <div class="row">
-      <div class="col-md-12">
-        <Carousel :settings="settings" :pauseAutoplayOnHover="true"
-                  :wrap-around="true" :breakpoints="breakpoints" class="mb-3">
-          <Slide v-for="(img, index) in data" :key="index">
-            <div class="carousel__item">
-              <img :src=helper.getImgUrl(img) @click="showImage(img)" class="img-fluid pizza-img" alt="imageUrl">
-            </div>
-          </Slide>
-        </Carousel>
-      </div>
-    </div>
+
+    <Carousel
+      v-if="isReady && data && data.length"
+      :key="carouselKey"
+      v-model="currentSlide"
+      :items-to-show="1.5"
+      :wrap-around="true"
+      snap-align="center"
+      :breakpoints="breakpoints"
+    >
+      <Slide v-for="(img, index) in data" :key="index">
+        <div class="slide-content">
+          <img
+            :src="helper.getImgUrl(img)"
+            @click="showImage(img)"
+            @error="handleImageError"
+            loading="lazy"
+            class="pizza-img"
+            alt="Pizza image"
+          >
+        </div>
+      </Slide>
+    </Carousel>
   </section>
 </template>
 
 <script>
-import {Carousel, Slide} from "vue3-carousel";
+import { Carousel, Slide } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
 
 export default {
-  components: {Carousel, Slide},
+  components: { Carousel, Slide },
   props: ['data'],
   data() {
     return {
       helper: this.$util,
+      currentSlide: 0,
+      isReady: false,
+      carouselKey: 0,
       image: {
         show: null,
         link: ''
       },
-      settings: {
-        itemsToShow: 1,
-        snapAlign: 'center',
-      },
       breakpoints: {
-        // 700px and up
-        300: {
-          itemsToShow: 1.4,
+        576: {
+          itemsToShow: 2.5,
           snapAlign: 'center'
         },
-        700: {
-          itemsToShow: 2.4,
+        992: {
+          itemsToShow: 3.5,
           snapAlign: 'center'
-        },
+        }
       }
     };
+  },
+  mounted() {
+    // Force carousel to initialize after DOM is ready
+    this.$nextTick(() => {
+      this.isReady = true;
+      // Force re-render to ensure proper centering
+      setTimeout(() => {
+        this.carouselKey++;
+      }, 50);
+    });
   },
   methods: {
     showImage(link) {
@@ -54,17 +74,45 @@ export default {
     cleanImageDialog() {
       this.image.show = null;
       this.image.link = '';
+    },
+    handleImageError(event) {
+      event.target.style.opacity = '0.5';
+      event.target.alt = 'Image failed to load';
     }
   }
 };
 </script>
 
 <style scoped>
-.pizza-img {
-  max-width: 16rem;
+.slide-content {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel__slide {
-  padding: 0.3rem;
+.pizza-img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.pizza-img:hover {
+  transform: scale(1.03);
+}
+
+@media (min-width: 576px) {
+  .pizza-img {
+    max-width: 240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pizza-img {
+    max-width: 280px;
+  }
 }
 </style>

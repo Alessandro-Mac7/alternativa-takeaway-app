@@ -12,8 +12,8 @@
       "key": 1,
       "name": "Margherita",
       "ingredients": "pomodoro, mozzarella, basilico e olio EVO",
-      "price_small": "5",
-      "price_large": "12",
+      "price_small": "6",
+      "price_large": "14",
       "type": "red",
       "image": ""
     },
@@ -21,8 +21,8 @@
       "key": 2,
       "name": "Capricciosa",
       "ingredients": "pomodoro, mozzarella, funghi, carciofi, prosciutto cotto e olive verdi",
-      "price_small": "7",
-      "price_large": "15",
+      "price_small": "8",
+      "price_large": "16",
       "type": "red",
       "image": ""
     },
@@ -30,8 +30,8 @@
       "key": 3,
       "name": "Tonno e cipolla",
       "ingredients": "pomodoro, mozzarella, tonno e cipolla rossa di Tropea",
-      "price_small": "7",
-      "price_large": "15",
+      "price_small": "8",
+      "price_large": "16",
       "type": "red",
       "image": ""
     },
@@ -39,8 +39,8 @@
       "key": 4,
       "name": "Sardi Salati",
       "ingredients": "pomodoro, acciughe, olive, olio EVO e origano calabrese",
-      "price_small": "7",
-      "price_large": "15",
+      "price_small": "8",
+      "price_large": "16",
       "type": "red",
       "image": ""
     },
@@ -48,8 +48,8 @@
       "key": 23,
       "name": "Diavola",
       "ingredients": "pomodoro, mozzarella, salame e 'nduja",
-      "price_small": "7",
-      "price_large": "15",
+      "price_small": "8",
+      "price_large": "16",
       "type": "red",
       "image": ""
     },
@@ -57,7 +57,7 @@
       "key": 5,
       "name": "Parmigiana",
       "ingredients": "pomodoro, mozzarella, melanzane fritte e parmigiano",
-      "price_small": "7",
+      "price_small": "8",
       "price_large": "16",
       "type": "red",
       "image": ""
@@ -66,16 +66,16 @@
       "key": 6,
       "name": "Patatine e…",
       "ingredients": "pomodoro, mozzarella würstel e patatine fritte",
-      "price_small": "7",
-      "price_large": "15",
+      "price_small": "8",
+      "price_large": "16",
       "type": "red",
       "image": ""
     },
     {
-      "key": 7,
+      "key": 8,
       "name": "Ortolana",
       "ingredients": "mozzarella, pachino, melanzane e zucchine fritte e peperoni arrostiti",
-      "price_small": "7",
+      "price_small": "8",
       "price_large": "16",
       "type": "white",
       "image": ""
@@ -84,8 +84,8 @@
       "key": 8,
       "name": "Don Peppe",
       "ingredients": "pomodoro, mozzarella, pancetta, porcini, rucola, bufala a fette e scaglie di grana",
-      "price_small": "8",
-      "price_large": "16",
+      "price_small": "9",
+      "price_large": "18",
       "type": "red",
       "image": ""
     },
@@ -93,7 +93,7 @@
       "key": 9,
       "name": "Contadina",
       "ingredients": "pomodoro, mozzarella, pancetta, 'nduja e cipolla",
-      "price_small": "7",
+      "price_small": "8",
       "price_large": "16",
       "type": "red",
       "image": ""
@@ -102,8 +102,8 @@
       "key": 10,
       "name": "Paisana",
       "ingredients": "pomodoro, mozzarella, salsiccia, porcini, rucola e patate a forno",
-      "price_small": "8",
-      "price_large": "16",
+      "price_small": "9",
+      "price_large": "18",
       "type": "red",
       "image": ""
     },
@@ -111,8 +111,8 @@
       "key": 11,
       "name": "Boscaiola",
       "ingredients": "Pancetta, porcini, pomodorini, mozzarella e affumicata",
-      "price_small": "8",
-      "price_large": "16",
+      "price_small": "9",
+      "price_large": "18",
       "type": "white",
       "image": ""
     },
@@ -129,8 +129,8 @@
       "key": 13,
       "name": "D’autunno",
       "ingredients": "mozzarella, speck, gorgonzola, noci e scaglie di grana",
-      "price_small": "7",
-      "price_large": "15",
+      "price_small": "8",
+      "price_large": "16",
       "type": "white",
       "image": ""
     },
@@ -138,17 +138,17 @@
       "key": 14,
       "name": "4 formaggi",
       "ingredients": "mozzarella, emmental, gorgonzola e parmigiano",
-      "price_small": "7",
-      "price_large": "15",
+      "price_small": "8",
+      "price_large": "16",
       "type": "white",
       "image": ""
     },
     {
-      "key": 15,
+      "key": 16,
       "name": "Caprese",
       "ingredients": "mozzarella, pachino, bufala, origano e basilico",
-      "price_small": "7",
-      "price_large": "15",
+      "price_small": "8",
+      "price_large": "16",
       "type": "white",
       "image": ""
     },
@@ -156,17 +156,17 @@
       "key": 16,
       "name": "Rucola",
       "ingredients": "mozzarella, pomodorini, rucola, crudo e scaglie di grana",
-      "price_small": "8",
-      "price_large": "16",
+      "price_small": "9",
+      "price_large": "18",
       "type": "white",
       "image": ""
     },
     {
-      "key": 17,
+      "key": 18,
       "name": "Mortazza",
-      "ingredients": "mozzarella, mortadella, pesto di pistacchio e stracciatella",
-      "price_small": "8",
-      "price_large": "16",
+      "ingredients": "mozzarella, mortadella IGP di Bologna, grandella di pistacchio e stracciatella",
+      "price_small": "10",
+      "price_large": "20",
       "type": "special",
       "image": ""
     },
@@ -183,8 +183,8 @@
       "key": 19,
       "name": "Friarielli",
       "ingredients": "mozzarella friarielli e salsiccia",
-      "price_small": "8",
-      "price_large": "16",
+      "price_small": "9",
+      "price_large": "18",
       "type": "white",
       "image": ""
     },
@@ -200,9 +200,9 @@
     {
       "key": 20,
       "name": "Kebabina",
-      "ingredients": "mozzarella, patatine, iceberg, salsa rosa, kebab di tacchino e cipolla di Tropea",
-      "price_small": "9",
-      "price_large": "19",
+      "ingredients": "mozzarella, patatine, iceberg, salsa rosa, Kebab di tacchino 100% Tacchino AIA e cipolla di Tropea",
+      "price_small": "12",
+      "price_large": "25",
       "type": "special",
       "image": ""
     },
@@ -210,8 +210,8 @@
       "key": 21,
       "name": "Cheese burger",
       "ingredients": "mozzarella, patatine, iceberg, 3 hamburger con panino e cheddar circondato da bacon con maionese e ketchup",
-      "price_small": "9",
-      "price_large": "19",
+      "price_small": "12",
+      "price_large": "25",
       "type": "special",
       "image": ""
     },
@@ -219,19 +219,26 @@
       "key": 25,
       "name": "PorkETT",
       "ingredients": "mozzarella, porchetta e peperoni arrostiti",
-      "price_small": "8",
-      "price_large": "16",
+      "price_small": "9",
+      "price_large": "18",
       "type": "special",
       "image": ""
     },
     {
       "key": 22,
       "name": "Tropeana",
-      "ingredients": "mozzarella, cipolla di Tropea caramellata, filetti di tonno, emulsione di 'nduja e polvere di olive nere",
-      "price_small": "9",
-      "price_large": "19",
+      "ingredients": "mozzarella, cipolla di Tropea caramellata HANDMADE, filetti di tonno Callipo, 'nduja e polvere di olive nere",
+      "price_small": "10",
+      "price_large": "20",
       "type": "special",
       "image": ""
+    },
+    {
+      "key": 26,
+      "name": "Lingua di pizza Classic",
+      "ingredients": "pomodoro, olio DOP e origano",
+      "price_small": "3,00",
+      "type": "red"
     }
   ]
 }

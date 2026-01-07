@@ -5,7 +5,6 @@ import store from '@/store';
 import router from '@/router';
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap';
-import 'vue3-carousel/dist/carousel.css';
 
 import BaseDialog from '@/components/ui/BaseDialog.vue'
 import BaseSpinner from '@/components/ui/BaseSpinner.vue'
@@ -28,3 +27,17 @@ app.component('base-section', BaseSection);
 app.component('image-dialog', ImageDialog);
 
 app.mount('#app');
+
+// Register service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register(`${process.env.BASE_URL}service-worker.js`)
+      .then((registration) => {
+        console.log('Service Worker registered:', registration.scope);
+      })
+      .catch((error) => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+}

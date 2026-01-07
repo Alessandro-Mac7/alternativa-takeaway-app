@@ -1,0 +1,11 @@
+# Icons Directory
+
+This directory will contain PWA icons. The following files need to be generated:
+
+- icon-192x192.png (192x192 px)
+- icon-512x512.png (512x512 px)
+- icon-maskable-192x192.png (192x192 px, maskable)
+- icon-maskable-512x512.png (512x512 px, maskable)
+- apple-touch-icon.png (180x180 px)
+
+Generate these from the L'Alternativa logo with appropriate padding for maskable icons.

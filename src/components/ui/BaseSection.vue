@@ -1,5 +1,5 @@
 <template>
-  <section :class="'bg-' + color">
+  <section :class="color ? 'bg-' + color : ''">
     <div class="container py-5">
       <h1 v-show="title" class="app-title mb-5">{{ title }}</h1>
       <slot></slot>
@@ -16,28 +16,36 @@ export default {
 <style scoped>
 section {
   color: #FFFFFF;
+  /* Full viewport minus bottom nav */
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
 }
-.app-title{
+
+section > .container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-title {
   font-family: 'Mistrully', sans-serif;
 }
+
 .bg-1 {
   background-color: #585045;
-  min-height: 100%;
-
 }
+
 .bg-2 {
   background-color: #866841;
-  min-height: 100%;
-
 }
+
 .bg-3 {
   background-color: #8d8b4a;
-  min-height: 100%;
-
 }
+
 .bg-4 {
   background-color: #5e5031;
-  min-height: 100%;
-
 }
 </style>

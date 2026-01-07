@@ -36,6 +36,8 @@
 .card-button:focus {
   filter: brightness(120%);
   transform: scale(0.93);
+  outline: 3px solid #C5C26A;
+  outline-offset: 2px;
 }
 
 

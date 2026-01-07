@@ -27,11 +27,11 @@
         <a target="_blank" rel="noopener noreferrer"
            href="https://www.facebook.com/alternativatakeaway/"
            class="icoFacebook " title="Facebook">
-          <img src="../../assets/icon/facebook.png" class="contact-icon footer-icon" alt="">
+          <img src="../../assets/icon/facebook.png" class="contact-icon footer-icon" alt="Seguici su Facebook">
         </a>
         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/alternativa_take_away/"
            class="icoInstagram " title="Instagram">
-          <img src="../../assets/icon/insta.png" class="contact-icon footer-icon" alt="">
+          <img src="../../assets/icon/insta.png" class="contact-icon footer-icon" alt="Seguici su Instagram">
         </a>
       </div>
 
@@ -86,8 +86,10 @@ footer {
   border-top: 1px solid #efa94a;
 }
 .footer-icon{
-  width: 2.5rem !important;
+  width: 3rem !important;
+  height: 3rem;
   margin: 1rem;
+  padding: 0.25rem;
 }
 
 .img-app {
@@ -105,6 +107,8 @@ footer {
 .img-app:focus {
   filter: brightness(150%);
   transform: scale(0.93);
+  outline: 3px solid #C5C26A;
+  outline-offset: 2px;
 }
 
 .contact-text {
@@ -115,9 +119,16 @@ footer {
   transform: scale(0.90);
 }
 
-.contact-text:hover, .contact-text:focus {
+.contact-text:hover {
   filter: brightness(150%);
   transform: scale(0.99);
+}
+
+.contact-text:focus {
+  filter: brightness(150%);
+  transform: scale(0.99);
+  outline: 3px solid #C5C26A;
+  outline-offset: 2px;
 }
 
 .footer-text {
@@ -129,5 +140,27 @@ footer {
 }
 .footer-text-3 {
   font-family: 'Yanone Kaffeesatz', cursive;
+}
+
+/* Social link touch targets */
+.icoFacebook,
+.icoInstagram {
+  display: inline-block;
+  padding: 0.5rem;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.icoFacebook:hover,
+.icoInstagram:hover {
+  background-color: rgba(197, 194, 106, 0.15);
+}
+
+.icoFacebook:focus,
+.icoInstagram:focus {
+  outline: 3px solid #C5C26A;
+  outline-offset: 2px;
 }
 </style>
