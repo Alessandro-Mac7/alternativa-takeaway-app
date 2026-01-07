@@ -202,7 +202,7 @@
       "name": "Kebabina",
       "ingredients": "mozzarella, patatine, iceberg, salsa rosa, Kebab di tacchino 100% Tacchino AIA e cipolla di Tropea",
       "price_small": "12",
-      "price_large": "25",
+      "price_large": "23",
       "type": "special",
       "image": ""
     },
@@ -211,7 +211,7 @@
       "name": "Cheese burger",
       "ingredients": "mozzarella, patatine, iceberg, 3 hamburger con panino e cheddar circondato da bacon con maionese e ketchup",
       "price_small": "12",
-      "price_large": "25",
+      "price_large": "23",
       "type": "special",
       "image": ""
     },
@@ -228,6 +228,15 @@
       "key": 22,
       "name": "Tropeana",
       "ingredients": "mozzarella, cipolla di Tropea caramellata HANDMADE, filetti di tonno Callipo, 'nduja e polvere di olive nere",
+      "price_small": "10",
+      "price_large": "20",
+      "type": "special",
+      "image": ""
+    },
+    {
+      "key": 27,
+      "name": "Bomba pepata",
+      "ingredients": "mozzarella, datterini gialli, lardo di colonnata, cacio e pepe",
       "price_small": "10",
       "price_large": "20",
       "type": "special",
